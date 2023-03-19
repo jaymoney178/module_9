@@ -1,0 +1,36 @@
+<html>
+    <form>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" pattern="[A-Za-z]+" required>
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" pattern="[A-Za-z]+" required>
+        
+        <label for="address1">Address 1:</label>
+        <input type="text" id="address1" name="address1" required oninvalid="this.style.backgroundColor='#FFC0CB'" oninput="this.style.backgroundColor=''">
+        
+        <label for="address2">Address 2:</label>
+        <input type="text" id="address2" name="address2" required oninvalid="this.style.backgroundColor='#FFC0CB'" oninput="this.style.backgroundColor=''">
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" pattern="[A-Za-z]+" required>
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" maxlength="2" pattern="[A-Za-z]+" required>
+        
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode" maxlength="5" pattern="[0-9]+" required>
+        
+        <label for="coffee-place">What is your favorite coffee place in Pittsburgh?</label>
+        <input type="text" id="coffee-place" name="coffee-place" pattern="[A-Za-z\s]+" required oninvalid="this.style.backgroundColor='#FFFF00'" oninput="this.style.backgroundColor=''">
+        
+        <label for="lunch-spot">What is your favorite lunch spot in Pittsburgh?</label>
+        <input type="text" id="lunch-spot" name="lunch-spot" pattern="[A-Za-z\s]+" required oninvalid="this.style.backgroundColor='#FFFF00'" oninput="this.style.backgroundColor=''">
+        
+        <label for="fav-city">What is your favorite city to visit outside of Pittsburgh?</label>
+        <input type="text" id="fav-city" name="fav-city" pattern="[A-Za-z\s]+" required oninvalid="this.style.backgroundColor='#FFFF00'" oninput="this.style.backgroundColor=''">
+        
+        <button type="submit">Submit</button>
+      </form>
+      
+</html>
